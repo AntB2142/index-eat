@@ -93,7 +93,23 @@ padding-bottom: 13px;
     color: white;
 }
 .slide-content {
-    max-width: 400px;
+    max-width: 500px;
+    position: relative;
+}
+.slider-buttons {
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button {
+    cursor: pointer;
+}
+.swiper{
     position: relative;
 }
 .slide-title {
@@ -129,6 +145,16 @@ padding-bottom: 13px;
 }
 .slide-summer {
     background-image: url('../img/summer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-autumn {
+    background-image: url('../img/autumn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-spring {
+    background-image: url('../img/spring.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -431,4 +457,71 @@ padding-bottom: 13px;
 .social-link {
     margin-left: 20px;
     text-decoration: none;
+}
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .search-form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content {
+        flex-wrap: wrap;
+    }
+    .tabs-card {
+        flex: 50%;
+        max-width: calc(50% - 30px);
+    }
+    .advatages-content {
+        flex-wrap: wrap;
+    }
+    .advatages-card {
+        flex: 50%;
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .slide {
+        padding: 70px;
+    }
+    .delivery-card {
+        width: calc(50% - 30px);
+    }
+    .footer-logo {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .promo {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+    .tabs-card, .advatages-card, .delivery-card {
+        max-width: 100%;
+    }
+
 }
