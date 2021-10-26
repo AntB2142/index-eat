@@ -1,36 +1,44 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .container {
     max-width: 1194px;
     margin: auto;
 }
+
 .header {
     display: flex;
     align-items: center;
     padding: 10px 0;
 }
+
+.logo-image {
+    width: 128px;
+}
+
 .search-form {
-    margin-left: 76px;
-    background: rgba(238, 238, 238, 0.71);
-    border-radius: 10px;
+    position: relative;
     display: flex;
+    margin-left: 76px;
+    background-color: rgba(238, 238, 238, 0.71);
+    border-radius: 10px;
     max-width: 620px;
     flex-grow: 1;
-    position: relative;
 }
+
 .search-input {
-background-color: transparent;
-border: none;
-width: 100%;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 13px;
-padding-bottom: 13px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 13px 20px;
+    padding-right: 50px;
 }
+
 .search-button {
     background-color: transparent;
     border: none;
@@ -39,12 +47,14 @@ padding-bottom: 13px;
     top: 0;
     height: 100%;
     padding-right: 18px;
-    padding-left: 18px; 
+    padding-left: 18px;
     cursor: pointer;
 }
+
 .auth {
     margin-left: auto;
 }
+
 .login {
     background: #EBEBEB;
     border-radius: 50px;
@@ -53,8 +63,9 @@ padding-bottom: 13px;
     text-decoration: none;
     font-size: 14px;
     line-height: 16px;
-    color: #000000;
+    color: #000;
 }
+
 .shopping-cart {
     position: relative;
     text-decoration: none;
@@ -67,6 +78,7 @@ padding-bottom: 13px;
     justify-content: center;
     margin-left: 30px;
 }
+
 .shopping-counter {
     position: absolute;
     right: 0;
@@ -74,11 +86,12 @@ padding-bottom: 13px;
     background: #FFAF19;
     font-size: 8px;
     line-height: 9px;
-    color: #000000;
+    color: #000;
     display: block;
     padding: 5px;
     border-radius: 50%;
 }
+
 .slide {
     position: relative;
     border-radius: 20px;
@@ -88,14 +101,17 @@ padding-bottom: 13px;
     align-items: center;
     padding: 100px;
 }
+
 .slide-text-light {
     background-color: grey;
-    color: white;
+    color: #fff;
 }
+
 .slide-content {
     max-width: 500px;
     position: relative;
 }
+
 .slider-buttons {
     position: absolute;
     right: 46px;
@@ -106,12 +122,15 @@ padding-bottom: 13px;
     width: 100px;
     justify-content: space-between;
 }
+
 .slider-button {
     cursor: pointer;
 }
-.swiper{
+
+.swiper {
     position: relative;
 }
+
 .slide-title {
     margin-top: 0;
     margin-bottom: 15px;
@@ -119,20 +138,30 @@ padding-bottom: 13px;
     font-size: 50px;
     line-height: 51px;
 }
+
 .slide-text {
     font-weight: bold;
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 30px;
 }
+
 .button-primary {
     background: #F47322;
     color: #fff;
 }
+
 .button-default {
     background-color: #fff;
     color: #5F5F61;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
 }
+
+.button-default:hover {
+    border: 2px solid #5F5F61;
+}
+
 .button {
     border-radius: 25px;
     padding: 12px 50px;
@@ -142,22 +171,27 @@ padding-bottom: 13px;
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
+    cursor: pointer;
 }
+
 .slide-summer {
     background-image: url('../img/summer.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .slide-autumn {
     background-image: url('../img/autumn.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .slide-spring {
     background-image: url('../img/spring.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .slide:before {
     content: '';
     position: absolute;
@@ -167,28 +201,33 @@ padding-bottom: 13px;
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 
-    100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
 }
+
 .promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
     margin: -20px;
 }
+
 .card {
     position: relative;
-    flex: 50%;
-    margin: 20px;
     border-radius: 20px;
     overflow: hidden;
     padding: 32px;
     max-width: 570px;
     min-height: 380px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 40%;
+    margin: 20px;
 }
+
 .card:before {
     z-index: -1;
     content: '';
@@ -199,9 +238,11 @@ padding-bottom: 13px;
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
+
 .card-text-light {
     color: #fff;
 }
+
 .card-title {
     font-weight: 500;
     font-size: 24px;
@@ -209,19 +250,22 @@ padding-bottom: 13px;
     margin-top: 4px;
     margin-bottom: 21px;
 }
+
 .card-description {
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;
     max-width: 200px;
 }
+
 .card-price {
     display: block;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 23px;
     margin-bottom: 8px;
 }
+
 .card-delivery {
     display: block;
     font-weight: 500;
@@ -229,6 +273,7 @@ padding-bottom: 13px;
     line-height: 23px;
     margin-bottom: 25px;
 }
+
 .card-image {
     position: absolute;
     left: 0;
@@ -238,6 +283,7 @@ padding-bottom: 13px;
     z-index: -2;
     object-fit: cover;
 }
+
 .section-title {
     font-weight: 500;
     font-size: 32px;
@@ -245,14 +291,18 @@ padding-bottom: 13px;
     margin-top: 0;
     margin-bottom: 47px;
 }
+
 .delivery-week {
     padding: 100px 0;
 }
+
 .delivery-cards {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    justify-content: space-between;
 }
+
 .delivery-card {
     margin: 15px;
     position: relative;
@@ -261,11 +311,13 @@ padding-bottom: 13px;
     border-radius: 18px;
     overflow: hidden;
 }
+
 .delivery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .delivery-tag {
     position: absolute;
     left: 10px;
@@ -277,37 +329,48 @@ padding-bottom: 13px;
     color: #49494F;
     padding: 5px 10px;
 }
+
 .tag-health {
     background: #D0FD89;
 }
+
 .tag-vegetables {
     background: #AEBC41;
 }
+
 .tag-meat {
     background: #B86B78;
 }
+
 .tag-bird {
     background: #D68334;
 }
+
 .tag-fish {
     background: #CD6255;
 }
+
 .tag-child {
     background: #FFFDBF;
 }
+
 .tag-parents {
     background: #F6FDC8;
 }
+
 .tag-holidays {
     background: #FEF7FE;
 }
+
 .section-grey {
     background: #F6F6F6;
 }
+
 .category {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 }
+
 .tabs {
     display: flex;
     margin: 0;
@@ -315,33 +378,45 @@ padding-bottom: 13px;
     padding: 0;
     list-style-type: none;
 }
+
 .tabs-link {
+    font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     text-decoration: none;
     color: #49494F;
     margin-right: 58px;
 }
+
 .tabs-link.active {
     color: #F37321;
 }
+
 .tabs-content {
     display: flex;
     margin: -15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .tabs-card {
     margin: 15px;
     max-width: 270px;
     border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 }
+
 .tabs-image {
     max-width: 100%;
 }
+
 .tabs-card-content {
     padding: 23px;
 }
+
 .tabs-title {
     margin-top: 0;
     margin-bottom: 13px;
@@ -349,17 +424,21 @@ padding-bottom: 13px;
     font-size: 20px;
     line-height: 23px;
 }
+
 .tabs-description {
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
     color: #B9B9BE;
+    margin-bottom: 36px;
 }
+
 .tabs-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .tabs-price {
     font-weight: 500;
     font-size: 23px;
@@ -368,12 +447,14 @@ padding-bottom: 13px;
     display: block;
     margin-bottom: 5px;
 }
+
 .tabs-weight {
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
     color: #AAAAB1;
 }
+
 .button-outline {
     cursor: pointer;
     background-color: transparent;
@@ -386,99 +467,110 @@ padding-bottom: 13px;
     line-height: 19px;
     color: #F37321;
 }
+
+.button-outline:hover {
+    color: #fff;
+    background-color: #FFA871;
+    border: 2px solid #FFA871;
+}
+
 .button-center {
     display: block;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 20px;
     width: 315px;
 }
 
-.our-advantages {
+.advantages {
     padding-top: 100px;
+    padding-bottom: 200px;
 }
-.advatages-content {
+
+.advatages-cards {
     display: flex;
-    margin: -15px;
-    margin-top: 52px;
-    margin-bottom: 202px;
+    justify-content: space-around;
+    margin: -18px;
+    flex-wrap: wrap;
 }
+
 .advatages-card {
-    margin: 15px;
-    max-width: 270px;
-    overflow: hidden;
-    background-color: #fff;
+    width: 270px;
+    height: 296px;
+    background: #fff;
     border: 1px solid #E9E9E9;
     box-sizing: border-box;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
     border-radius: 18px;
+    margin: 18px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.2s;
 }
+
 .advatages-image {
-    max-width: 100%;
-   padding: 30px 105px;
+    fill: #F37321;
+    stroke: #F37321;
+    stroke-width: 0.5;
 }
-.advatages-card-content {
-    padding: 23px;
-}
+
 .advatages-title {
-   
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;
-    text-align: center;
 }
+
 .advatages-description {
     font-size: 14px;
     line-height: 22px;
-    text-align: center;
     color: #49494F;
 }
+
 .footer {
     padding: 40px 0;
     background: #F6F6F6;
 }
+
 .footer-wrapper {
     display: flex;
     align-items: center;
 }
+
 .footer-logo {
     margin-right: 50px;
 }
+
 .footer-link {
     font-size: 16px;
     line-height: 23px;
     color: #000000;
     margin-right: 50px;
 }
+
 .social-links {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
+
 .social-link {
     margin-left: 20px;
     text-decoration: none;
 }
+
 @media (max-width: 1260px) {
     .container {
         max-width: 960px;
     }
     .search-form {
         margin-left: 40px;
-        margin-right: 40px;
-    }
-    .tabs-content {
-        flex-wrap: wrap;
+        margin-right: 36px;
     }
     .tabs-card {
-        flex: 50%;
-        max-width: calc(50% - 30px);
+        max-width: calc(50% - 36px);
     }
-    .advatages-content {
-        flex-wrap: wrap;
-    }
-    .advatages-card {
-        flex: 50%;
-        max-width: calc(50% - 30px);
+    .advantages-card {
+        width: calc(50% - 72px);
     }
 }
 
@@ -487,13 +579,17 @@ padding-bottom: 13px;
         max-width: 750px;
     }
     .slide {
-        padding: 70px;
+        padding: 60px;
     }
     .delivery-card {
         width: calc(50% - 30px);
     }
+    .advantages {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
     .footer-logo {
-        margin-right: 40px;
+        display: none;
     }
 }
 
@@ -506,13 +602,16 @@ padding-bottom: 13px;
     }
     .search-form {
         order: 5;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: 15px 1px;
     }
-    .promo {
-        flex-wrap: wrap;
+    .card {
+        flex: 90%;
+    }
+    .delivery-week {
+        padding: 50px 0;
+    }
+    .advantages-card {
+        width: calc(50% - 36px);
     }
 }
 
@@ -520,8 +619,59 @@ padding-bottom: 13px;
     .container {
         max-width: 90%;
     }
-    .tabs-card, .advatages-card, .delivery-card {
-        max-width: 100%;
+    .slide {
+        padding: 30px;
     }
-
+    .slider-buttons {
+        right: 5px;
+        bottom: 1px;
+    }
+    .slide-title {
+        font-size: 38px;
+    }
+    .slide-text {
+        font-size: 14px;
+    }
+    .button {
+        padding: 12px 20px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .delivery-cards {
+        justify-content: center;
+    }
+    .delivery-card {
+        width: 80%;
+    }
+    .tabs-link {
+        margin-right: 18px;
+        font-size: 17px;
+    }
+    .tabs-card {
+        max-width: 90%;
+    }
+    .button-center {
+        width: 276px;
+    }
+    .advantages-card {
+        width: 100%;
+    }
+    .footer-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-link {
+        font-size: 14px;
+        margin: 0 15px;
+    }
+    .social-links {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 124px;
+        justify-content: space-between;
+    }
+    .social-link {
+        margin-left: 0;
+    }
 }
